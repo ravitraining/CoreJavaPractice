@@ -8,11 +8,11 @@ public int compare(Integer obj1, Integer obj2)
 {
 	Integer i1=(Integer)obj1;
 	Integer i2=(Integer)obj2;
-	if(i1<i2)
+	if(i1>i2)
 	{
-		return +1;
+		return 1;
 	}
-	else if(i1>i2)
+	else if(i1<i2)
 	{
 		return -1;
 	}
@@ -20,7 +20,5 @@ public int compare(Integer obj1, Integer obj2)
 	{
 		return 0;
 	}
-	
 }
-
 }
