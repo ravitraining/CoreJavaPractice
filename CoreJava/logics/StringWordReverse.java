@@ -5,16 +5,14 @@ public String reverseString(String str)
 {
 	String words[]=str.split(" ");
 	String reverseString="";
-	for(int i=0;i<words.length;i++)
+	for(String word:words)
 	{
-		String word=words[i];
-		String reverseword="";
-		for(int j=word.length()-1;j>=0;j--)
+		String str2="";
+		for(int i=word.length()-1;i>=0;i--)
 		{
-			reverseword=reverseword+word.charAt(j);
+			str2=str2+word.charAt(i);
 		}
-		reverseString=reverseString+reverseword+" ";
-		
+	reverseString=reverseString+str2+" ";
 	}
 	return reverseString;
 }

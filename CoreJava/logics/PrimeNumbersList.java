@@ -2,9 +2,10 @@ package logics;
 
 public class PrimeNumbersList {
 public static void main(String[] args) {
-	int maxnum=100;
+	
 	String primenum="";
 	int num;
+	int totalcount=0;
 	System.out.println("The prime numbers are");
 	for(int i=1;i<=100;i++)
 	{
@@ -19,8 +20,9 @@ public static void main(String[] args) {
 		if(count==2)
 		{
 			primenum=primenum+" "+i;
+			totalcount++;
 		}
 	}
-	System.out.println("Prime numbers are:"+primenum);
+	System.out.println(totalcount+" Prime numbers are:"+primenum);
 }
 }

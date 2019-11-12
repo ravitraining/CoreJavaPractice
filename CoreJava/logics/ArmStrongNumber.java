@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class ArmStrongNumber {
 public static void main(String[] args) {
+	@SuppressWarnings("resource")
 	Scanner scn=new Scanner(System.in);
 	System.out.println("Enter the number");
 	int num=scn.nextInt();
